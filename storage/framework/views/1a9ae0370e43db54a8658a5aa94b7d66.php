@@ -85,19 +85,19 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="<?php echo e(route('drivers')); ?>">
+                    <a class="nav-link menu-link" href="<?php echo e(route('drivers.index')); ?>">
                         <i class="ri-car-fill"></i> <span data-key="t-authentication">Drivers</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="<?php echo e(route('offices')); ?>">
+                    <a class="nav-link menu-link" href="<?php echo e(route('offices.index')); ?>">
                         <i class="ri-building-line"></i> <span data-key="t-authentication">Offices</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="<?php echo e(route('category')); ?>">
+                    <a class="nav-link menu-link" href="<?php echo e(route('category.index')); ?>">
                         <i class="ri-tornado-line"></i> <span data-key="t-authentication">Categories</span>
                     </a>
                 </li>

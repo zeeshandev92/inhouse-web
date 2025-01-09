@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\DriverController;
+use App\Http\Controllers\Admin\OfficeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,12 +15,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+require __DIR__.'/auth.php';
 
-Route::prefix('admin')->group(function () {
+Route::middleware('auth')->prefix('admin')->group(function () {
 
-	Route::get('/', function () {
-        return view('admin.login');
-    })->name('/');
+	Route::redirect('/', '/admin/dashboard')->name('/');
 
 	Route::get('dashboard', function () {
         return view('admin.dashboard');
@@ -31,21 +33,24 @@ Route::prefix('admin')->group(function () {
         return view('admin.user');
     })->name('user');
 
-    Route::get('drivers', function () {
-        return view('admin.drivers');
-    })->name('drivers');
+    // Route::get('drivers', function () {
+    //     return view('admin.drivers');
+    // })->name('drivers');
+    Route::resource('drivers', DriverController::class)->except(['show', 'create']);
 
-	Route::get('offices', function () {
-        return view('admin.offices');
-    })->name('offices');
+	// Route::get('offices', function () {
+    //     return view('admin.offices');
+    // })->name('offices');
+    Route::resource('offices', OfficeController::class)->except(['show', 'create']);
 
 	Route::get('office-detail', function () {
         return view('admin.office-detail');
     })->name('office-detail');
 
-    Route::get('category', function () {
-        return view('admin.category');
-    })->name('category');
+    // Route::get('category', function () {
+    //     return view('admin.category');
+    // })->name('category');
+    Route::resource('category', CategoryController::class)->except(['show', 'create']);
 
     Route::get('content', function () {
         return view('admin.content');

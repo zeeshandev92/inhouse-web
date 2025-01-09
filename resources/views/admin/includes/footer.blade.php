@@ -26,7 +26,7 @@
 				</div>
 				<div class="d-flex gap-2 justify-content-center mt-4 mb-2">
 					<button type="button" class="btn w-sm btn-light" data-bs-dismiss="modal">Close</button>
-					<button type="button" class="btn w-sm btn-danger" id="delete-record">Yes, Delete It!</button>
+					<button type="button" class="btn w-sm btn-danger" id="delete-record" data-id="">Yes, Delete It!</button>
 				</div>
 			</div>
 		</div>

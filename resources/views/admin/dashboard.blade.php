@@ -325,7 +325,7 @@
                                             </div>
                                             <div class="col-sm-auto">
                                                 <div class="d-flex gap-1 flex-wrap">
-                                                    <a href="{{route('offices')}}" class="btn btn-success add-btn"><i
+                                                    <a href="{{route('offices.index')}}" class="btn btn-success add-btn"><i
                                                             class="ri-eye-fill align-bottom me-1"></i> View All
                                                     </a>
                                                 </div>
