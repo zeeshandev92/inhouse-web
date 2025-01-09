@@ -38,7 +38,7 @@ class OfficeController extends Controller
         try {
             $validated = $request->validate([
                 'name' => 'required',
-                'email' => 'required',
+                'email' => 'required|email|unique:offices',
                 'phone_no' => 'required',
                 'status' => 'required',
             ]);
