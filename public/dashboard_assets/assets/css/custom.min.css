@@ -1,0 +1,62 @@
+
+/*# sourceMappingURL=custom.min.css.map */
+.profile-wid-bg::before{
+	background: linear-gradient(to top, var(--vz-dark-text-emphasis), var(--vz-dark));
+}
+.img-avatar{
+	height: 3rem;
+	width: 3rem;
+	border-radius: 4px;
+	object-fit: cover;
+}
+.align-center{
+	align-content: center;
+}
+.ml-1{
+	margin-left: 10px;
+}
+.mr-1{
+	margin-right: 10px;
+}
+.pos-relative{
+	position: relative;
+}
+.badge-absolute{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+.align-middle{
+	align-content: center;
+}
+.btn-vs{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	line-height: 100px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 24px;
+}
+.btn-sm-vs {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 13px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin: 0 auto;
+	top: 50%;
+	margin-top: -25px;
+}
+.text-primary{
+	color: #0d1caa !important;
+}
+.bg-light-danger{
+	background: #ffebeb;
+}
